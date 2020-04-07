@@ -180,7 +180,7 @@ def run_setup():
     
     create_settings(url, user, light_ids, fail_colour, success_colour)
 
-if __name__ == "__main__":
+def main():
     parser = argparse.ArgumentParser(description='Utility for use hue bulbs to set the outcome of a bash command')
 
     parser.add_argument('-r', '--run', nargs='+', help='Accepts command to be run')
@@ -191,6 +191,9 @@ if __name__ == "__main__":
     if (args.setup):
         run_setup()
     elif (args.run):
+        if(not check_settings()):
+            print("No settings found please use '--setup' to create some")
+            exit(0)
         settings = get_settings()
         url = settings["url"]
         user = settings["api_user"]
@@ -208,4 +211,7 @@ if __name__ == "__main__":
         set_light_state(url, user, state)
     else:
         parser.print_help()
+
+if __name__ == "__main__":
+    main()
     

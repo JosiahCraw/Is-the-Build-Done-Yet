@@ -1,1 +1,6 @@
 *.json
+build/
+dist/
+env/
+pyvenv.cfg
+is_the_build_done_yet*.egg-info
