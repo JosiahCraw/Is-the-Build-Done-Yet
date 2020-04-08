@@ -11,7 +11,7 @@ setuptools.setup(
     description="Make Hue lights change colour when a subprocess is complete",  
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/pypa/sampleproject",
+    url="https://git.sys-io.net/projects/PER/repos/is-the-build-done-yet",
     packages=setuptools.find_packages(),
     entry_points='''
         [console_scripts]
