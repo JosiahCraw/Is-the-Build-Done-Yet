@@ -8,7 +8,7 @@ setuptools.setup(
     version="0.0.1",
     author="Josiah Craw",
     author_email="jos@joscraw.net",
-    description="Make Hue lights change colour when a subprocess is complete",
+    description="Make Hue lights change colour when a subprocess is complete",  
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/pypa/sampleproject",
