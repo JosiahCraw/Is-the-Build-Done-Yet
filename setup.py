@@ -5,13 +5,13 @@ with open("README.md", 'r') as file_handler:
 
 setuptools.setup(
     name="is-the-build-done-yet",
-    version="0.0.1",
+    version="1.0.0",
     author="Josiah Craw",
     author_email="jos@joscraw.net",
     description="Make Hue lights change colour when a subprocess is complete",  
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://git.sys-io.net/projects/PER/repos/is-the-build-done-yet",
+    url="https://github.com/JosiahCraw/Is-the-Build-Done-Yet",
     packages=setuptools.find_packages(),
     entry_points='''
         [console_scripts]
